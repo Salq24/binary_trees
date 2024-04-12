@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_height - calcs the height
+ * m_binary_tree_height - calcs the height
  * @tree: the root node
  * Return: height
  */
@@ -16,7 +16,7 @@ size_t m_binary_tree_height(const binary_tree_t *tree)
 
 	height_l = tree->left ? 1 + m_binary_tree_height(tree->left) : 1;
 	height_r = tree->right ? 1 + m_binary_tree_height(tree->right) : 1;
-	return ((height_l > height_r) ? height_l : height_r );
+	return ((height_l > height_r) ? height_l : height_r);
 }
 
 
